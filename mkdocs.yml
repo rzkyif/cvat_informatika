@@ -1,0 +1,29 @@
+site_name: CVAT Informatika
+theme:
+  name: material
+  language: id
+  custom_dir: overrides
+  icon:
+    logo: bootstrap/eye-fill
+  palette:
+    primary: yellow
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes 
+nav:
+  - Home: 
+      - index.md
+      - help.md
+  - Panduan Penggunaan: 
+      - usage/annotator.md
+      - usage/manager.md
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
